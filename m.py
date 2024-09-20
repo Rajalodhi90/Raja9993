@@ -7,10 +7,10 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('BOT TOKEN')
+bot = telebot.TeleBot('7338508601:AAHAQDs-4V3sBUjkmDnejghEVd_d3tV57dU')
 
 # Admin user IDs
-admin_id = ["ADMIN ID"]
+admin_id = ["5842081256"]
 
 USER_FILE = "users.txt"
 LOG_FILE = "log.txt"
@@ -39,7 +39,7 @@ def read_free_users():
 
 allowed_user_ids = read_users()
 def log_command(user_id, target, port, time):
-    admin_id = ["5759284972"]
+    admin_id = ["5842081256"]
     user_info = bot.get_chat(user_id)
     if user_info.username:
         username = "@" + user_info.username
@@ -156,7 +156,7 @@ def get_user_info(message):
 
 @bot.message_handler(commands=['remove'])
 def remove_user(message):
-    user_id = str(message.chat.id)
+    user_id = str( ii)
     if user_id in admin_id:
         command = message.text.split()
         if len(command) > 1:
